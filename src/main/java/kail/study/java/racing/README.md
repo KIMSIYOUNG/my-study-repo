@@ -5,12 +5,12 @@
 
 ## TO-DO LIST
 
-- 함께 플레이 할 사용자를 입력받는다.
+- [x] 함께 플레이 할 사용자를 입력받는다.
 
-    - 1~5 글자
-    - 공백 및 NULL Exception
+    - [x] 1~5 글자
+    - [x] 공백 및 NULL Exception
     - [x] Comma(,) 를 기준으로 구분
-    - 중복된 이름 입력 Exception
+    - [x] 중복된 이름 입력 Exception
     
 - 플레이 할 횟수를 입력받는다.
     
