@@ -2,12 +2,12 @@ package kail.study.java.racing;
 
 import java.util.Objects;
 
-public class Name {
+public class Car {
 	public static final int MAX_LENGTH = 5;
 
 	private final String name;
 
-	public Name(String name) {
+	public Car(String name) {
 		validate(name);
 		this.name = name;
 	}
@@ -39,8 +39,8 @@ public class Name {
 			return true;
 		if (o == null || getClass() != o.getClass())
 			return false;
-		Name name1 = (Name)o;
-		return Objects.equals(name, name1.name);
+		Car car = (Car)o;
+		return Objects.equals(name, car.name);
 	}
 
 	@Override
@@ -52,8 +52,3 @@ public class Name {
 		return name;
 	}
 }
-
-
-
-
-
