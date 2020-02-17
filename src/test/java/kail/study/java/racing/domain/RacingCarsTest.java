@@ -1,12 +1,14 @@
-package kail.study.java.racing;
+package kail.study.java.racing.domain;
 
 import static org.assertj.core.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.jupiter.api.Test;
+
+import kail.study.java.racing.domain.Car;
+import kail.study.java.racing.domain.RacingCars;
 
 class RacingCarsTest {
 	@Test

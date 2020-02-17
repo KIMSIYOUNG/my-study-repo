@@ -1,4 +1,4 @@
-package kail.study.java.racing;
+package kail.study.java.racing.util;
 
 import static org.assertj.core.api.Assertions.*;
 
@@ -6,6 +6,8 @@ import java.util.List;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+
+import kail.study.java.racing.util.StringUtils;
 
 public class UserInputTest {
 	@Test

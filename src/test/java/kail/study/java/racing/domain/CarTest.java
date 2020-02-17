@@ -1,4 +1,4 @@
-package kail.study.java.racing;
+package kail.study.java.racing.domain;
 
 import static org.assertj.core.api.Assertions.*;
 
@@ -6,6 +6,8 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
+
+import kail.study.java.racing.domain.Car;
 
 public class CarTest {
 	@ParameterizedTest

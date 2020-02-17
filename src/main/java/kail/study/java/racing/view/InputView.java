@@ -1,4 +1,4 @@
-package kail.study.java.racing;
+package kail.study.java.racing.view;
 
 import java.util.Scanner;
 

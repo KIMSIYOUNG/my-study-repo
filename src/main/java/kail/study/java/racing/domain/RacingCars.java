@@ -1,8 +1,10 @@
-package kail.study.java.racing;
+package kail.study.java.racing.domain;
 
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
+
+import kail.study.java.racing.domain.Car;
 
 public class RacingCars {
 	private final List<Car> cars;

@@ -1,4 +1,4 @@
-package kail.study.java.racing;
+package kail.study.java.racing.util;
 
 import java.util.Arrays;
 import java.util.List;
