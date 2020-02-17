@@ -8,7 +8,7 @@ import kail.study.java.racing.util.StringUtils;
 
 public class OutputView {
 	public static void printRoundResult(List<Car> cars) {
-		System.out.println("실행 결과");
+		System.out.println("라운드 결과 \n");
 		for (Car car : cars) {
 			System.out.println(car.getName() + " : "
 				+ StringUtils.printHyphen(car.getPosition()));
