@@ -8,4 +8,5 @@ public class RandomGenerator {
 	public static int create() {
 		return new Random().nextInt(BOUND);
 	}
+
 }
