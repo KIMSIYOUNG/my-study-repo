@@ -4,8 +4,10 @@ import java.util.Objects;
 
 public class Car {
 	public static final int MAX_LENGTH = 5;
+	private static final int MOVE_STANDARD = 4;
 
 	private final String name;
+	private int position = 0;
 
 	public Car(String name) {
 		validate(name);
@@ -48,7 +50,13 @@ public class Car {
 		return Objects.hash(name);
 	}
 
-	public String getName() {
-		return name;
+	public void move(int randomValue) {
+		if(randomValue >= MOVE_STANDARD){
+			this.position++;
+		}
+	}
+
+	public int getPosition() {
+		return position;
 	}
 }
