@@ -7,9 +7,6 @@ import java.util.List;
 
 import org.junit.jupiter.api.Test;
 
-import kail.study.java.racing.domain.Car;
-import kail.study.java.racing.domain.RacingCars;
-
 class RacingCarsTest {
 	@Test
 	void 중복된_이름_테스트() {

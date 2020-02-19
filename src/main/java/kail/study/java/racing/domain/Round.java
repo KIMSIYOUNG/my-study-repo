@@ -35,6 +35,9 @@ public class Round {
 	}
 
 	public void reduce() {
+		if(this.round == 0) {
+			throw new RuntimeException("모든 라운드가 종료되었습니다.");
+		}
 		this.round--;
 	}
 }
