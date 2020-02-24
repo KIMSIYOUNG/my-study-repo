@@ -10,6 +10,7 @@ public enum Program {
 	private final String name;
 	private final List<String> list;
 
+
 	Program(String name, List<String> list) {
 		this.name = name;
 		this.list = list;
