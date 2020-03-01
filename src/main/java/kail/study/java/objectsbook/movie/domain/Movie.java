@@ -2,7 +2,6 @@ package kail.study.java.objectsbook.movie.domain;
 
 import java.time.Duration;
 
-import kail.study.java.objectsbook.movie.domain.discount.policy.DefaultDiscountPolicy;
 import kail.study.java.objectsbook.movie.domain.discount.policy.DiscountPolicy;
 
 public class Movie {
@@ -11,7 +10,7 @@ public class Movie {
 	private Money fee;
 	private DiscountPolicy discountPolicy;
 
-	public Movie(String title, Duration runningTime, Money fee, DefaultDiscountPolicy discountPolicy) {
+	public Movie(String title, Duration runningTime, Money fee, DiscountPolicy discountPolicy) {
 		this.title = title;
 		this.runningTime = runningTime;
 		this.fee = fee;
