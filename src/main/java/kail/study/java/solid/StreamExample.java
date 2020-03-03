@@ -1,4 +1,4 @@
-package kail.study.java;
+package kail.study.java.solid;
 
 import java.util.ArrayList;
 import java.util.Arrays;

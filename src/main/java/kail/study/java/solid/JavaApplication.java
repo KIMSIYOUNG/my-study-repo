@@ -1,4 +1,4 @@
-package kail.study.java;
+package kail.study.java.solid;
 
 public class JavaApplication {
     public static void main(String[] args){
