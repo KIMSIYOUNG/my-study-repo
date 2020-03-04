@@ -6,7 +6,6 @@ public class Hello {
 	private static final Hello single = new Hello();
 
 	private Hello() {
-		Collections
 	}
 
 	public static Hello getInstance() {
