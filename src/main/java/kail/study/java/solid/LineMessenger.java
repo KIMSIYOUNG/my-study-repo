@@ -1,6 +1,6 @@
 package kail.study.java.solid;
 
-public class LineMessenger implements Messenger{
+public class LineMessenger implements Messenger {
 
 	@Override
 	public void boot() {

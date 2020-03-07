@@ -6,7 +6,7 @@ public class Bag {
 	private Ticket ticket;
 
 	public Bag(Long amount) {
-		this(null,amount);
+		this(null, amount);
 	}
 
 	public Bag(Invitation invitation, long amount) {
@@ -15,7 +15,7 @@ public class Bag {
 	}
 
 	public Long hold(Ticket ticket) {
-		if(hasInvitation()) {
+		if (hasInvitation()) {
 			setTicket(ticket);
 			return 0L;
 		} else {

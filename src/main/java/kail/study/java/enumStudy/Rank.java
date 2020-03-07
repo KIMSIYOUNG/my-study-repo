@@ -26,7 +26,7 @@ public enum Rank {
 		Arrays.stream(values())
 			.filter(name -> name.equals(anotherName))
 			.findFirst()
-			.orElseThrow(()-> new IllegalArgumentException());
+			.orElseThrow(() -> new IllegalArgumentException());
 	}
 
 	public static void main(String[] args) {

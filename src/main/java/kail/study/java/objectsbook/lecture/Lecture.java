@@ -21,12 +21,12 @@ public class Lecture {
 			.average().orElse(0);
 	}
 
-	public List<Integer> getScores () {
+	public List<Integer> getScores() {
 		return Collections.unmodifiableList(scores);
 	}
 
 	public String evaluate() {
-		return String.format("Pass: %d Fail %d", passCount(),failCount());
+		return String.format("Pass: %d Fail %d", passCount(), failCount());
 	}
 
 	private long failCount() {

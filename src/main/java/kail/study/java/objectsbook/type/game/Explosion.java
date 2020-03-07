@@ -2,7 +2,7 @@ package kail.study.java.objectsbook.type.game;
 
 import java.awt.*;
 
-public class Explosion implements Displayable, Effect{
+public class Explosion implements Displayable, Effect {
 	@Override
 	public Point getPosition() {
 		return null;

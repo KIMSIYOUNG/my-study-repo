@@ -1,6 +1,5 @@
 package kail.study.java.design.single;
 
-
 import static org.assertj.core.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;

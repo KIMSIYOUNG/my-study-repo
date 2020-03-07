@@ -44,7 +44,7 @@ public class CarTest {
 	}
 
 	@ParameterizedTest
-	@ValueSource(ints = {4,7,9})
+	@ValueSource(ints = {4, 7, 9})
 	@DisplayName("4이상의 수가 입력되어 전진하는 경우")
 	void 전진하는_경우(int randomValue) {
 		Car car = new Car("pobi");
@@ -53,7 +53,7 @@ public class CarTest {
 	}
 
 	@ParameterizedTest
-	@ValueSource(ints = {1,0,3})
+	@ValueSource(ints = {1, 0, 3})
 	@DisplayName("3이하의 수가 입력되어 정지하는 경우")
 	void 정지하는_경우(int randomValue) {
 		Car car = new Car("pobi");

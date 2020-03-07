@@ -4,7 +4,7 @@ import static java.util.stream.Collectors.*;
 
 import java.util.List;
 
-public class GradeLecture extends Lecture{
+public class GradeLecture extends Lecture {
 	private List<Grade> grades;
 
 	public GradeLecture(String title, int pass, List<Integer> scores, List<Grade> grades) {
@@ -14,7 +14,7 @@ public class GradeLecture extends Lecture{
 
 	@Override
 	public String evaluate() {
-		return super.evaluate() + ", "+ gradesStatistics();
+		return super.evaluate() + ", " + gradesStatistics();
 	}
 
 	private String gradesStatistics() {
@@ -24,7 +24,7 @@ public class GradeLecture extends Lecture{
 	}
 
 	private String format(Grade grade) {
-		return String.format("%s:%d",grade.getName(), gradeCount(grade));
+		return String.format("%s:%d", grade.getName(), gradeCount(grade));
 	}
 
 	private long gradeCount(Grade grade) {

@@ -2,7 +2,7 @@ package kail.study.java.objectsbook.movie.domain.discount.condition;
 
 import kail.study.java.objectsbook.movie.domain.Screening;
 
-public class SequenceCondition implements DiscountCondition{
+public class SequenceCondition implements DiscountCondition {
 	private int sequence;
 
 	public SequenceCondition(int sequence) {

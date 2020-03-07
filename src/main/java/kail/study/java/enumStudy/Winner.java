@@ -3,9 +3,9 @@ package kail.study.java.enumStudy;
 import java.util.Arrays;
 import java.util.List;
 
-public enum  Winner {
-	WINNER("승리", Arrays.asList("kyle","pobi","hello","world")),
-	LOSER("패배", Arrays.asList("hodol","dunddoung","rutgo"));
+public enum Winner {
+	WINNER("승리", Arrays.asList("kyle", "pobi", "hello", "world")),
+	LOSER("패배", Arrays.asList("hodol", "dunddoung", "rutgo"));
 
 	private final String winner;
 	private final List<String> list;

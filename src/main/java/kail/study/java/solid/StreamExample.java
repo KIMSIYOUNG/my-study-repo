@@ -12,10 +12,10 @@ public class StreamExample {
 		List<String> list = Arrays.asList(new String[] {"a", "b", "c"});
 		Set<String> set = list.stream().filter(e -> e.contains("a")).collect(Collectors.toSet());
 		Iterator<String> iterator = set.iterator();
-		while(iterator.hasNext()){
+		while (iterator.hasNext()) {
 			System.out.println(iterator.next());
 		}
-		for(int i =0; i<list.size(); i++) {
+		for (int i = 0; i < list.size(); i++) {
 			System.out.println(list.get(i));
 		}
 

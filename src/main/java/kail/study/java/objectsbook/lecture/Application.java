@@ -17,7 +17,7 @@ public class Application {
 			new Grade("D", 69, 50),
 			new Grade("F", 49, 0));
 
-		GradeLecture gradeLecture = new GradeLecture("객체지향 프로그래밍", 70, Arrays.asList(81,95,75,50,45), grades);
+		GradeLecture gradeLecture = new GradeLecture("객체지향 프로그래밍", 70, Arrays.asList(81, 95, 75, 50, 45), grades);
 
 		System.out.println(gradeLecture.evaluate());
 	}

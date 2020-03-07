@@ -1,6 +1,6 @@
 package kail.study.java.objectsbook.type.game;
 
-public class Sound implements Effect{
+public class Sound implements Effect {
 	@Override
 	public void activate() {
 

@@ -1,6 +1,6 @@
 package kail.study.java.solid;
 
-public class DiscountedBag extends Bag{
+public class DiscountedBag extends Bag {
 	private double discountRate;
 
 	public void setDiscountRate(double discountRate) {
@@ -8,6 +8,6 @@ public class DiscountedBag extends Bag{
 	}
 
 	public void applyDiscount(int price) {
-		super.setPrice(price- (int)(discountRate * price));
+		super.setPrice(price - (int)(discountRate * price));
 	}
 }

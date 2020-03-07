@@ -2,7 +2,7 @@ package kail.study.java.objectsbook.type.game;
 
 import java.awt.*;
 
-public class Monster implements Collidable{
+public class Monster implements Collidable {
 	@Override
 	public boolean collideWith(Collidable other) {
 		return false;

@@ -8,16 +8,16 @@ import kail.study.java.objectsbook.movie.domain.Money;
 import kail.study.java.objectsbook.movie.domain.Screening;
 import kail.study.java.objectsbook.movie.domain.discount.condition.DiscountCondition;
 
-public abstract class DefaultDiscountPolicy implements DiscountPolicy{
+public abstract class DefaultDiscountPolicy implements DiscountPolicy {
 	private List<DiscountCondition> conditions = new ArrayList<>();
 
-	public DefaultDiscountPolicy(DiscountCondition ... conditions) {
+	public DefaultDiscountPolicy(DiscountCondition... conditions) {
 		this.conditions = Arrays.asList(conditions);
 	}
 
 	public Money calculateDiscountAmount(Screening screening) {
-		for(DiscountCondition each : conditions) {
-			if(each.isSatisfiedBy(screening)) {
+		for (DiscountCondition each : conditions) {
+			if (each.isSatisfiedBy(screening)) {
 				return getDiscountAmount(screening);
 			}
 		}

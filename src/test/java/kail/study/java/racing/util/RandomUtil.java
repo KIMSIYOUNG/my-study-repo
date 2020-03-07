@@ -10,8 +10,8 @@ public class RandomUtil {
 
 	@Test
 	void create() {
-		for(int i = 0; i< ENOUGH_BIG_NUMBER; i++) {
-			assertThat(RandomGenerator.create()).isBetween(0,9);
+		for (int i = 0; i < ENOUGH_BIG_NUMBER; i++) {
+			assertThat(RandomGenerator.create()).isBetween(0, 9);
 		}
 	}
 }

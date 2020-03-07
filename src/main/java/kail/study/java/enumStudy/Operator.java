@@ -17,6 +17,6 @@ public enum Operator {
 	}
 
 	public Double calculate(double a, double b) {
-		return this.biFunction.apply(a,b);
+		return this.biFunction.apply(a, b);
 	}
 }

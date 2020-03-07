@@ -31,7 +31,7 @@ public enum Number {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(Number.AVG.calculate(Arrays.asList(1,2,3,4,5)));
-		System.out.println(Number.SUM.calculate(Arrays.asList(1,2,3,4,5)));
+		System.out.println(Number.AVG.calculate(Arrays.asList(1, 2, 3, 4, 5)));
+		System.out.println(Number.SUM.calculate(Arrays.asList(1, 2, 3, 4, 5)));
 	}
 }
