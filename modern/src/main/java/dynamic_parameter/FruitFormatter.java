@@ -5,19 +5,10 @@ import java.util.List;
 
 public class FruitFormatter {
 
-	public static List<Apple> filterByGreenApples(List<Apple> inventory) {
+	public static List<Apple> format(List<Apple> apples, ApplePredicate predicate) {
 		List<Apple> result = new ArrayList<>();
-		for (Apple apple : inventory) {
-			if(Color.GREEN.equals(apple.getColor()))
-				result.add(apple);
-		}
-		return result;
-	}
-
-	public static List<Apple> filterByWeight(List<Apple> inventory) {
-		List<Apple> result = new ArrayList<>();
-		for (Apple apple : inventory) {
-			if(apple.getWeight() > 150)
+		for (Apple apple : apples) {
+			if(predicate.test(apple))
 				result.add(apple);
 		}
 		return result;
