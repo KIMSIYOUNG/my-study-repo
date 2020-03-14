@@ -1,11 +1,13 @@
 package modern.stream;
 
 
+import static java.util.stream.Collectors.*;
 import static org.assertj.core.api.Assertions.*;
 
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 import org.junit.jupiter.api.DisplayName;
@@ -37,7 +39,7 @@ public class TraderTest {
 	}
 
 	@Test
-	@DisplayName("케임브리지에 거주하는 모든 트랜잭션의 합을 출력하시오.")
+	@DisplayName("케임브리지에 거주하는 모든 트랜잭션의 합을 출력하시오." )
 	void sumOfCambridge() {
 		Integer sumOfCambridge = transactions.stream()
 			.filter(transaction -> transaction.getTrader().getCity().equals("Cambridge"))
@@ -108,5 +110,14 @@ public class TraderTest {
 			.orElse(0);
 		assertThat(max).isEqualTo(1000);
 		System.out.println(max);
+	}
+
+	@Test
+	@DisplayName("이름별로 분류")
+	void transactionByCountry() {
+		Map<String, List<Trader>> collect = transactions.stream()
+			.map(transaction -> transaction.getTrader())
+			.collect(groupingBy(Trader::getName));
+		System.out.println(collect);
 	}
 }
